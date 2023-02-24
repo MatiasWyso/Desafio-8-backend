@@ -1,0 +1,102 @@
+body{
+    background-color: #dfdfdf;
+}
+
+.welcome-box{
+    background-color: #90caf9;
+    margin: 2rem;
+    padding: 1.5rem;
+    border-radius: 25px;
+    width: fit-content;
+}
+
+.welcome-title{
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.user-role{
+    color: #666;
+}
+
+.user-email{
+    color: #333;
+    margin: 0.5rem;
+}
+
+.github-user-tag, .user-age{
+    margin: 0 0.5rem;
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 3rem;
+}
+
+#product-list-container{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-item{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    min-width: 10rem;
+    max-width: 15rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+#item-title{
+    font-size: 2rem;
+}
+
+.price-tag{
+    font-weight: bolder;
+}
+
+.stock-tag{
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.thumbnail-container{
+    width: 12rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#no-image{
+    color: #555;
+}
+
+#see-cart-button{
+    display: block;
+    margin: 1rem auto;
+}
+
+.item-counter-container{
+    display: flex;
+    height: 2rem;
+    margin: 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.counter{
+    margin: 0
+}

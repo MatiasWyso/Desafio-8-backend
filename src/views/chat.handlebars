@@ -1,0 +1,22 @@
+<div>
+    <h1 class="chat-title">Super Chat!</h1>
+    <div id="chat-container">
+        <div id="messages-section">
+            {{#each messages}}
+                <div class="message-box">
+                    <p class="user-tag">{{this.user}}:</p>
+                    <p class="message-tag">{{this.message}}</p>
+                </div>
+            {{/each}}
+        </div>
+        <form action="/api/chat" class="add-product-form" method="post" enctype="application/x-www-form-urlencoded" id="chat-form">
+            <input type="text" placeholder="message" name="message" id="message-input" autocomplete="off" required>
+            <input type="submit" value="Send" class="submit-input">
+        </form>
+        <button id="clean-button" hidden>Clean Chat</button>
+    </div>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/statics/js/chat.js"></script>

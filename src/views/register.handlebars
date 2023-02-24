@@ -1,0 +1,39 @@
+<h1 class="signup-title">Sign up</h1>
+<div class="row register-form-container container">
+    <form class="col s12 register-form" action="/api/session/register" method="post">
+        <div class="row">
+        <div class="input-field col s6">
+            <input type="text" class="validate" name="name">
+            <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+            <input type="text" class="validate" name="lastName">
+            <label for="last_name">Last Name</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+            <input type="email" class="validate" name="email">
+            <label for="disabled">Email</label>
+            <span class="helper-text" data-error="Introduce a valid email" data-success="right"></span>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+            <input type="number" class="validate" name="age" min="1" max="100">
+            <label for="email">Age</label>
+        </div>
+        </div>
+        <div class="row">
+        <div class="input-field col s12">
+            <input type="password" class="validate" name="password">
+            <label for="password">Password</label>
+        </div>
+        </div>
+        <input class="waves-effect waves-light btn-small register-submit" type="submit" value="Register">
+    </form>
+</div>
+<a href="/api/session/github"><button class="waves-effect waves-light btn-small github-signup">Sign up with Github</button></a>
+<a href="/login" class="login-anchor">Do You have an account? Log in!</a>
+
+<script src="statics/js/register.js"></script>

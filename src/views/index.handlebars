@@ -1,0 +1,40 @@
+<div>
+    <div class="welcome-box z-depth-2">
+        <h3 class="welcome-title">Welcome {{user.name}} {{user.lastName}} <span class="user-role">({{user.role}})</span></h3>
+        <p class="user-email">{{user.email}}</p>
+        {{#if user.age}}
+            <p class="user-age">{{user.age}} years old</p>
+        {{/if}}
+        {{#if user.githubLogin}}
+            <p class="github-user-tag">(Registered with Github)</p>
+        {{/if}}
+    </div>
+    <h1 class="main-title">Our products</h1>
+    <button id="see-cart-button" class="waves-effect waves-light btn-small" onclick="seeCart(event)">See Cart</button>
+    <div id="product-list-container">
+        {{#each products}}
+            <div class="product-item" id={{_id}} >
+                <p id="item-title">{{title}}</p>
+                <p>{{description}}</p>
+                <p class="price-tag">${{price}}</p>
+                {{#if thumbnails}}
+                    <div class="thumbnail-container">
+                        <img src="../../statics/img/{{thumbnails.[0].originalName}}" alt="">
+                    </div>
+                {{else}}
+                    <p id="no-image">no image</p>
+                {{/if}}
+                <p class="stock-tag">{{stock}} restantes</p>
+                <div class="item-counter-container">
+                    <button class="less-button-counter" onclick="decreaseAmount(event)">-</button>
+                    <p class="counter">1</p>
+                    <button class="more-button-counter" onclick="increaseAmount(event)">+</button>
+                </div>
+                <button id="add-to-cart-button" class="waves-effect waves-light btn-small" onclick="addToCart(event)">Add to cart</button>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/statics/js/index.js"></script>

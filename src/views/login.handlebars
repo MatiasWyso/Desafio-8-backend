@@ -1,0 +1,23 @@
+<h1 class="login-title">Login</h1>
+
+<div class="row container login-form-container">
+    <form class="col s12" action="/api/session/login" method="post">
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="email" class="validate" name="email">
+                <label for="disabled">Email</label>
+                <span class="helper-text" data-error="Introduce a valid email" data-success="right"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input type="password" class="validate" name="password">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <input class="waves-effect waves-light btn-small register-submit" type="submit" value="Log in">
+    </form>
+</div>
+<a href="/api/session/github"><button class="waves-effect waves-light btn-small github-login">Sign in with Github</button></a>
+
+<a href="/register" class="signup-anchor">Are you new? Sign up!</a>

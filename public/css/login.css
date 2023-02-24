@@ -1,0 +1,26 @@
+.login-title{
+    text-align: center;
+    color: #444;
+    font-size: 3rem;
+}
+
+.login-form-container{
+    max-width: 40rem;
+}
+
+.signup-anchor{
+    margin: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.signup-anchor:hover{
+    color: #2865e7;
+}
+
+.github-login{
+    margin: auto;
+    display: block;
+}
